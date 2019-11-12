@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CS654 Assignment 1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <style>
+        #bv1,#bv2,#bvs1,#bvs2 {
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>VM3 - Monitor</h1>
+    <div id="report" style="border: solid 1px black; padding: 0.2em;"></div>
+    <div id="calc">
+        n1: <input type="text" id="n1"> <br>
+        n2: <input type="text" id="n2"> <br>
+        res: <span id="result"></span>
+        rand: <span id="rand"></span>
+        <button onclick="calculate()">Calculate</button>
+    </div>
+    <div id="vm1" style="border: solid 1px black; padding: 0.2em;"">
+        <h2>VM1</h2>
+        BV1: <span id="bv1">&bull;</span> <br>
+        BVS1: <span id="bvs1">&bull;</span> <br>
+    </div>
+    <div id="vm2" style="border: solid 1px black; padding: 0.2em;"">
+        <h2>VM2</h2>
+        BV2: <span id="bv2">&bull;</span> <br>
+        BVS2: <span id="bvs2">&bull;</span> <br>
+    </div>
+    <script src="live.js"></script>
+</body>
+</html>
